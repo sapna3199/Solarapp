@@ -7,7 +7,9 @@ import joblib
 
 app = Flask(__name__)
 
-model = pickle.load(open('G:/project2/finalized_model.pkl', 'rb'))
+file = open('G:/project2/finalized_model.pkl', 'rb')
+model = pickle.load(file)
+file.close()
 
 @app.route('/')
 def home():
