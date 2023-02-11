@@ -7,9 +7,7 @@ import joblib
 
 app = Flask(__name__)
 
-import os
-os.chdir(r'G:\project2')
-file = open(r'G:\project2\finalized_model.pkl', 'rb') 
+file = open(r'C:\Users\Admin\Downloads\finalized_model.pkl', 'rb') 
 model = pickle.load(file)
 file.close()
 
